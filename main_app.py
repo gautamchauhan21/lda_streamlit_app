@@ -17,6 +17,7 @@ import os
 import nltk
 
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 stop = stopwords.words('english')
 new_stops = ['said','us','the','could','also']
