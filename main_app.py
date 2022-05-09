@@ -14,6 +14,7 @@ import pyLDAvis.gensim_models as gensimvis
 from gensim.parsing.preprocessing import preprocess_string, strip_punctuation, strip_numeric
 from gensim.models import CoherenceModel
 import os
+import nltk
 
 nltk.download('stopwords')
 
