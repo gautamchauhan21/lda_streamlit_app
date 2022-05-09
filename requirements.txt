@@ -4,3 +4,4 @@ gensim==4.1.2
 nltk==3.6.7
 streamlit==1.9.0
 scipy==1.7.3
+openpyxl==3.0.9
