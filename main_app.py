@@ -108,7 +108,7 @@ def explore_topic(lda_model, topic_number, topn, output=True):
 
 
 path = os.getcwd()
-path_of_data = path+'lda_streamlit_app/20211209-SVM_news_text.xlsx'
+path_of_data = 'lda_streamlit_app/20211209-SVM_news_text.xlsx'
 data = read_and_preprocess(path_of_data)
 
 display_data(data,"Printing raw data")
