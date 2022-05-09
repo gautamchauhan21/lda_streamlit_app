@@ -106,7 +106,8 @@ def explore_topic(lda_model, topic_number, topn, output=True):
 
 # path_of_data = '/Users/gautamchauhan/Documents/RA_prof_vivek/Task_4_model_on_news_about_safety_topics/lda_streamlit_app/20211209-SVM_news_text.xlsx'
 
-path = os.getcwd(path)
+
+path = os.getcwd()
 path_of_data = path+'lda_streamlit_app/20211209-SVM_news_text.xlsx'
 data = read_and_preprocess(path_of_data)
 
