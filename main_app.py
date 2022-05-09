@@ -13,6 +13,9 @@ from streamlit import components
 import pyLDAvis.gensim_models as gensimvis
 from gensim.parsing.preprocessing import preprocess_string, strip_punctuation, strip_numeric
 from gensim.models import CoherenceModel
+import os
+
+nltk.download('stopwords')
 
 stop = stopwords.words('english')
 new_stops = ['said','us','the','could','also']
@@ -100,8 +103,10 @@ def explore_topic(lda_model, topic_number, topn, output=True):
 
 
 
-path_of_data = '/Users/gautamchauhan/Documents/RA_prof_vivek/Task_4_model_on_news_about_safety_topics/lda_streamlit_app/20211209-SVM_news_text.xlsx'
+# path_of_data = '/Users/gautamchauhan/Documents/RA_prof_vivek/Task_4_model_on_news_about_safety_topics/lda_streamlit_app/20211209-SVM_news_text.xlsx'
 
+path = os.getcwd(path)
+path_of_data = path+'lda_streamlit_app/20211209-SVM_news_text.xlsx'
 data = read_and_preprocess(path_of_data)
 
 display_data(data,"Printing raw data")
