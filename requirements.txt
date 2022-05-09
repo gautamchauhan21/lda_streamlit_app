@@ -1,0 +1,6 @@
+pyLDAvis==3.3.1
+pandas==1.4.1
+gensim==4.1.2
+nltk==3.6.7
+streamlit==1.9.0
+scipy==3.8.0
